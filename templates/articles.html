@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block container %}
+
+<ul>
+    {% for ar in arts %}
+    <li>
+        <h3>{{ar.titre}}</h3>
+        <p>{{ar.blog}}</p>
+    </li>
+     {% endfor %}
+</ul>
+    
+{% endblock container %}
