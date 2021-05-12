@@ -1,13 +1,8 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
+
 @app.route('/')
-def bonjour():
-    a="bonjour"
-    return a
-
-
-@app.route('/index')
 def index():
     return render_template("index.html",title="Home")
 
