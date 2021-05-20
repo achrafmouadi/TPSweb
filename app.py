@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
+
 app = Flask(__name__)
 
+global messages
+messages=list()
 
 @app.route('/')
 def index():
@@ -9,7 +12,9 @@ def index():
 @app.route('/contact', methods=["GET","POST"])
 def contact():
     if request.method == "POST":
-        return "DONE!!!"
+        messages.append({"name": request.form["name"], "email": request.form["email"], "password": request.form["password"] })
+        print(messages)
+        return render_template("messages.html", messages=messages)
     return render_template("contact.html",title="Contact")
 
 @app.route('/apropos')
@@ -27,4 +32,4 @@ def article():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5012)
+    app.run(debug=True, port=5000)

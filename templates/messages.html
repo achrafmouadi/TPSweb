@@ -1,4 +1,9 @@
-{% extends "base.html" %}
-{%  block container %}
-    
-{%  block container %}
+{% extends 'base.html' %}
+ {% block container %} 
+ <h1>Lmoucharakin fprojet : </h1>
+ {% for msg in messages%}
+<h2>User : {{msg["name"]}}</h2>
+<p>Email : {{msg["email"]}}</p>
+<p>Password : {{msg["password"]}}</p>
+{% endfor %} 
+{% endblock container %}

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    padding: 20px;
+}
+
+#clock {
+  margin: 0 auto;
+    width: 600px;
+    height: 600px;
+}
+
+#face {
+    stroke: rgb(23, 119, 75);
+    stroke-width: 2px;
+}
+
+#numbers {
+    fill: rgb(23, 119, 75);
+    stroke-width: 1px;
+}
+
+#hands {
+    stroke: rgb(23, 119, 75);
+    stroke-width: 1px;
+    fill: rgb(23, 119, 75);
+}
+
+#sec {
+    stroke: lightblue;
+    border-radius: 20px;
+}

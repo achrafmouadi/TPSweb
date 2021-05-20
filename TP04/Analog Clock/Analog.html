@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anal Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <svg id="clock" viewBox="0 0 100 100" width="500" height="500">
+        <circle id="face" cx="50" cy="50" r="45"/>
+        <g id="ticks">
+          <line x1='50.00' y1='5.000' x2='50.00' y2='10.00'/>
+          <line x1='95.00' y1='50.00' x2='90.00' y2='50.00'/>
+          <line x1='50.00' y1='95.00' x2='50.00' y2='90.00'/>
+          <line x1='5.000' y1='50.00' x2='10.00' y2='50.00'/>
+        </g>
+        <g id="numbers">
+          <text x="42.5" y="18">12</text>
+          <text x="85" y="53">3</text>
+          <text x="45" y="88">6</text>
+          <text x="10" y="53">9</text>
+        </g>
+        <g id="hands">
+          <line id="hour"  x1="50" y1="50" x2="50" y2="24"/>
+          <line id="min" x1="50" y1="50" x2="50" y2="20"/>
+          <line id="sec" x1="50" y1="50" x2="50" y2="16"/>
+          <circle id="center" cx="50" cy="50" r="2"/>
+        </g>
+      </svg>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
