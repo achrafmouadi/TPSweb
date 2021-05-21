@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+    {% block container %}
+
+    <form action="/game" method="POST">
+        <div class="border-div">
+            <div class="form-group">
+                <label for="name">guess number from 0 to 100</label><br><br>
+                <input type="name" name="name" placeholder="Enter answer">
+            </div>
+            <br>
+            <button type="submit" class="btn-submit"><a href="/game"></a> Submit</button>
+            <button type="button" class="btn-submit" onclick="window.location.href='/'" ><a href="/game"></a> End Game</button>
+        </div>
+    </form>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    
+{% endblock container %} 

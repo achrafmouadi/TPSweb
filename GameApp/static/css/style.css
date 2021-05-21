@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+
+    margin-top:80px; 
+}
+
+.border-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: 8px solid steelblue;
+    border-radius: 20px;
+    text-anchor: middle;
+    margin: 0 auto;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+}
+
+button{
+    margin-bottom: 10px;
+}
+
+label{
+    font-family: sans-serif;
+}
